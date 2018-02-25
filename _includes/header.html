@@ -10,7 +10,7 @@
 	  {% for path in page_paths %}
 	  {% assign this_page = site.pages | where: "path", path | first %}
 	  {% unless this_page.efn %}
-	  {% if this_page.title %}
+	  {% if this_page.sidebar %}
 	  <a href="{{ this_page.url | relative_url }}">
 	  <li>{{ this_page.title | default: "UNNAMED PAGE"  }}
 	  </li>

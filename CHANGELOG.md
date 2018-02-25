@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][]
 
+
+## [0.1.1][] - 2018-02-25
+
+### Fixed
+- Added version number for jekyll-feed.
+- Changed name of created gem from "lycorma" to "jekyll-theme-lycorma".
+- Actually added "sidebar" code to layout. Whoops.
+
 ## [0.1.0][] - 2018-02-25
 
 ### Added
@@ -20,5 +28,6 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
   phones yet.
 
 
-[Unreleased]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.1...HEAD
 [0.1.0]: https://github.com/cdr255/jekyll-theme-lycorma/compare/02d52c22ad33d1af79b0080096eea823cdd4955d...v0.1.0
+[0.1.1]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.0...v0.1.1

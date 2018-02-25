@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "lycorma"
-  spec.version       = "0.1.0"
-  spec.authors       = [""]
-  spec.email         = [""]
+  spec.name          = "jekyll-theme-lycorma"
+  spec.version       = "0.2.0"
+  spec.authors       = ["Christopher Rodriguez"]
+  spec.email         = ["cdr255@gmail.com"]
 
   spec.summary       = "A theme designed around the idea of a short, serialized fiction website."
   spec.homepage      = "https://github.com/cdr255/jekyll-theme-lycorma"
@@ -16,5 +16,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
-  spec.add_development_dependency "jekyll-feed"
+  spec.add_development_dependency "jekyll-feed", "~> 0.9.3"
 end
