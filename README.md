@@ -1,10 +1,7 @@
-# lycorma
+# Lycorma
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+A Jekyll theme designed from the ground up to work well for serialized
+fiction.
 
 
 ## Installation
@@ -12,13 +9,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "lycorma"
+gem "jekyll-theme-lycorma"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: lycorma
+theme: jekyll-theme-lycorma
 ```
 
 And then execute:
@@ -27,24 +24,46 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install lycorma
+    $ gem install jekyll-theme-lycorma
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+There is no pagination currently, and there is only one layout. All
+styling is done in `main.scss` except for the initial reset (in
+`/_sass/reset.scss`) and the syntax highlighting (in
+`/_sass/syntax.css`, borrowed from github and mostly ignored because
+this theme isn't intended for discussing software).
+
+For a page to appear in the sidebar, it needs `sidebar: true` set in
+it's frontmatter.
+
+Each post is assumed to have the following front matter, as well:
+
+* `title:` The title of Your piece.
+* `description:` A short synopsis of Your piece.
+* `date:` The original date Your piece was published.
+
+It's also important that You specify certain things in the
+`_config.yml` file. There are a few nonstandard settings:
+
+* `license:` The license for Your work. I recommend a Creative Commons
+  license of some sort, but You do You.
+* `licurl:` The url of whichever license You've chosen for Your work.
+* `author:` The name of the license holder (that is, probably Your
+  name) for the work.
+  
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at
+https://github.com/cdr255/jekyll-theme-lycorma. This project is
+intended to be a safe, welcoming space for collaboration, and
+contributors are expected to adhere to the [Contributor
+Covenant](http://contributor-covenant.org) code of conduct.
 
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `lycorma.gemspec` accordingly.
+That said, this project is in use by me, and is subject to change if
+my whims carry me there.
 
 ## License
 
