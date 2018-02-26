@@ -27,7 +27,7 @@ github_username:  cdr255
 
 # Build settings
 markdown: kramdown
-theme: lycorma
+theme: jekyll-theme-lycorma
 plugins:
   - jekyll-feed
 

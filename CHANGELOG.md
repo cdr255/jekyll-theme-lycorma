@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][]
 
+- Placeholder 'til I change something.
+
+## [0.1.2][] 2018-02-25
+
+### Added
+
+- Links are underlined, now.
+
+### Fixed
+
+- Changed version string from "0.2.0" to "0.1.1", and then to "0.1.2". I'm tired, apparently.
+- Made lists all "outside" oriented, justified to the left, and
+  indented in slightly from the left instead of pushed to the center
+  of the page.
 
 ## [0.1.1][] - 2018-02-25
 
@@ -28,6 +42,7 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
   phones yet.
 
 
-[Unreleased]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.2...HEAD
 [0.1.0]: https://github.com/cdr255/jekyll-theme-lycorma/compare/02d52c22ad33d1af79b0080096eea823cdd4955d...v0.1.0
 [0.1.1]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.0...v0.1.1
+[0.1.2]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.1...v0.1.2
