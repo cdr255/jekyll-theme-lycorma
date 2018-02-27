@@ -11,10 +11,20 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 - Placeholder
 
+
+## [0.2.2][] 2018-02-26
+
+### Fixed
+
+- Display of tables on phone now works as intended.
+- Space between paragraphs is now present on mobile as well as comp.
+
+
 ## [0.2.1][] 2018-02-26
 
 ### Fixed
 - Incremented Version to avoid repushing v0.2.0.
+
 
 ## [0.2.0][] 2018-02-26
 

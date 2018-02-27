@@ -208,6 +208,10 @@ body {
 	}
 	
 	p {
+	    @media #{$information-phone} {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	    }
 	    @media #{$information-comp} {
 	    margin: 1em;
 	    }
@@ -234,6 +238,12 @@ body {
 
 	table {
 	    @media #{$information-phone} {
+		padding: 0;
+		max-width: 98vw;
+		margin-left: auto;
+		margin-right: auto;
+		left: -8;
+		font-size: 4vw;
 		
 	    }
 
