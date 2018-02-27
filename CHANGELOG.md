@@ -7,9 +7,25 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased][]
 
-### Changed
-
 - Placeholder
+
+
+## [0.2.3][] 2018-02-27
+
+### Added
+
+- Favicon Support (Undocumented)
+- Plugins:
+  - Jekyll-Tidy so the code ceases to make my eyes bleed.
+  - Jekyll-SEO-tag so Google Plays nice with us.
+  - Jekyll-Sitemap to map the site ;).
+
+### Fixed 
+
+- Simplified all header CSS.
+- Fixed Changelog links.
+- Embettered the placement of main content text across all devices.
+- Changed Header font to match site header font instead of body-wide font.
 
 
 ## [0.2.2][] 2018-02-26
@@ -79,8 +95,10 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
   phones yet.
 
 
-[Unreleased]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.2.2...HEAD
 [0.1.0]: https://github.com/cdr255/jekyll-theme-lycorma/compare/02d52c22ad33d1af79b0080096eea823cdd4955d...v0.1.0
 [0.1.1]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.0...v0.1.1
 [0.1.2]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.1...v0.1.2
-[0.2.0]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.1...v0.2.0
+[0.2.0]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.1.2...v0.2.0
+[0.2.1]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.2.0...v0.2.1
+[0.2.2]: https://github.com/cdr255/jekyll-theme-lycorma/compare/v0.2.1...v0.2.2

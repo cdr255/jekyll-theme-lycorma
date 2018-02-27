@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-lycorma"
-  spec.version       = "0.2.2"
+  spec.version       = "0.2.3"
   spec.authors       = ["Christopher Rodriguez"]
   spec.email         = ["cdr255@gmail.com"]
 
@@ -17,4 +17,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "jekyll-feed", "~> 0.9.3"
+  spec.add_development_dependency "jekyll-sitemap", "~> 0"
+  spec.add_development_dependency "jekyll-tidy", "~> 0"
+  spec.add_development_dependency "jekyll-seo-tag", "~> 0"
 end

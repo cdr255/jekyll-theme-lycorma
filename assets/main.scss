@@ -132,8 +132,8 @@ body {
 	@media #{$information-comp} {
 	    width: 60%;
 	    min-width: 20em;
-	    margin-left: 28%;
-	    margin-right: 1em;
+	    margin-left: 25%;
+	    margin-right: 15%;
 	    padding: 2em;
 	}
 	
@@ -141,10 +141,10 @@ body {
 	
 	h1,h2,h3,h4,h5 {
 	    
-	    padding-left: 0.5em;
-	    letter-spacing: 0.5em;
+//	    padding-left: 0.5em;
+//	    letter-spacing: 0.5em;
 	    color: $color-text-normal;
-	    font-family: $font-body;
+	    font-family: $font-header;
 	    padding-top: 2em;
 	    padding-bottom: 1em;
 	    text-align: center;
@@ -159,9 +159,7 @@ body {
 	}
 	h2 {
 	    @media #{$information-phone} {
-		margin-left: 20vw;
-		margin-right: 20vw;
-		font-size: 6vw;
+		font-size: 8vw;
 	    }
 	    @media #{$information-comp} {
 		font-size: x-large;
@@ -170,7 +168,7 @@ body {
 	}
 	h3 {
 	    @media #{$information-phone} {
-		font-size: 10vw;
+		font-size: 7vw;
 	    }
 	    @media #{$information-comp} {
 		font-size: large;
@@ -178,7 +176,7 @@ body {
 	}
 	h4 {
 	    @media #{$information-phone} {
-		font-size: 10vw;
+		font-size: 6vw;
 	    }
 	    @media #{$information-comp} {
 		font-size: normal;
@@ -186,7 +184,7 @@ body {
 	}
 	h5 {
 	    @media #{$information-phone} {
-		font-size: 10vw;
+		font-size: 5vw;
 	    }
 	    @media #{$information-comp} {
 		font-size: small;
