@@ -13,6 +13,8 @@ $color-accent:      #9E9E9E;
 $color-text-normal: #212121;
 $color-text-alt:    #757575;
 $color-divider:     #BDBDBD;
+$information-phone: "only screen and (max-width : 639px)";
+$information-comp: "only screen and (min-width: 640px)";
 
 @import "reset";
 
@@ -24,12 +26,34 @@ body {
 
 
     // HEADER SIDEBAR
+    #sidebarbackground {
+	@media #{$information-comp} {
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    width: 25%;
+	    max-width: 16em;
+	    border-right: 2px solid $color-divider;
+	    background-color: $color-main-normal;
+	    margin-right: 2em;
+	}
+    }
+
     header {
-	position: fixed;
-	height: 100%;
-	width: 25%;
-	min-width: 10em;
-	margin-right: 2em;
+
+	@media #{$information-phone} {
+	    width: 100%;
+	    color: $color-text-normal;
+	}
+
+	@media #{$information-comp} {
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    width: 25%;
+	    max-width: 16em;
+	    margin-right: 2em;
+	}
 	background-color: $color-main-normal;
 	padding: 0;
 	text-align: center;
@@ -46,12 +70,20 @@ body {
 	}
 	
 	p {
+
+	    @media #{$information-phone} {
+		padding-bottom: 1em;
+	    }
+	    
+	    @media #{$information-comp} {
+		padding-bottom: 2em;
+		padding-right: 25%;
+		padding-left: 25%;
+	    }
+	    
 	    font-family: $font-body;
 	    color: $color-text-alt;
 	    background-color: $color-main-dark;
-	    padding-bottom: 2em;
-	    padding-right: 25%;
-	    padding-left: 25%;
 	    text-align: center;
 	}
 
@@ -63,28 +95,53 @@ body {
 	}
 
 	nav {
-	    margin-top: 1em;
+	    @media #{$information-phone} {
+		padding: 0.5em; 
+	    }
+	    @media #{$information-comp} {
+		margin-top: 1em;	
+	    }
 	    font-size: large;
-
 	    li {
-		padding: 1em;
-		letter-spacing: 0.5em;
-		margin-bottom: 2em;
+		@media #{$information-phone} {
+		    display: inline;
+		    padding: 1em;
+		    line-height: 1.5em;
+		}
+		@media #{$information-comp} {
+		    padding: 1em;
+		    letter-spacing: 0.5em;
+		    margin-bottom: 2em;
+		}
+	    }
+	    li:hover {
+		color: $color-accent;
 	    }
 	}
     }
     
     // ACTUAL CONTENT
     .content {
-	width: 60%;
-	min-width: 20em;
-	margin-left: 28%;
-	margin-right: 1em;
-	padding: 2em;
+	
+	@media #{$information-phone} {
+	    max-width: 90vw;
+	    margin-left: 5vw;
+	    margin-right: 5vw;
+	}
+	
+	@media #{$information-comp} {
+	    width: 60%;
+	    min-width: 20em;
+	    margin-left: 28%;
+	    margin-right: 1em;
+	    padding: 2em;
+	}
 	
 	background-color: $color-bg;
 	
 	h1,h2,h3,h4,h5 {
+	    
+	    padding-left: 0.5em;
 	    letter-spacing: 0.5em;
 	    color: $color-text-normal;
 	    font-family: $font-body;
@@ -93,19 +150,47 @@ body {
 	    text-align: center;
 	}
 	h1 {
-	    font-size: xx-large;
+	    @media #{$information-phone} {
+		font-size: 10vw;
+	    }
+	    @media #{$information-comp} {
+		font-size: xx-large;
+	    }
 	}
 	h2 {
-	    font-size: x-large;
+	    @media #{$information-phone} {
+		margin-left: 20vw;
+		margin-right: 20vw;
+		font-size: 6vw;
+	    }
+	    @media #{$information-comp} {
+		font-size: x-large;
+	    }
+
 	}
 	h3 {
-	    font-size: large;
+	    @media #{$information-phone} {
+		font-size: 10vw;
+	    }
+	    @media #{$information-comp} {
+		font-size: large;
+	    }
 	}
 	h4 {
-	    font-size: normal;
+	    @media #{$information-phone} {
+		font-size: 10vw;
+	    }
+	    @media #{$information-comp} {
+		font-size: normal;
+	    }
 	}
 	h5 {
-	    font-size: small;
+	    @media #{$information-phone} {
+		font-size: 10vw;
+	    }
+	    @media #{$information-comp} {
+		font-size: small;
+	    }
 	}
 	hr {
 	    margin-top: 2em;
@@ -123,8 +208,11 @@ body {
 	}
 	
 	p {
-	    width: 100%;
+	    @media #{$information-comp} {
 	    margin: 1em;
+	    }
+	    width: 100%;
+	    max-width: 80em;
 	}
 	code {
 	    background-color: $color-bg;
@@ -145,9 +233,15 @@ body {
 	}
 
 	table {
+	    @media #{$information-phone} {
+		
+	    }
+
+	    @media #{$information-comp} {
+		margin-left: auto;
+		margin-right: auto;		
+	    }
 	    text-align: center;
-	    margin-left: auto;
-	    margin-right: auto;
 	    border: 1px solid $color-accent;
 	    border-collapse: collapse;
 	    
@@ -198,16 +292,29 @@ body {
 	    font-style: bold;
 	}
 	pre {
+	    @media #{$information-phone} {
+		font-size: 3.5vw;	
+	    }
 	    margin: 1em;
 	    text-align: center;
 	}
 	.synopsis {
+	    
+	    @media #{$information-phone} {
+		padding: 0;
+		width: 98vw;
+		margin-left: -4vw;
+		margin-right: 1vw;
+	    }
+
+	    @media #{$information-comp} {
+		padding: 1em;
+		width: 65%;
+		margin: auto;
+	    }
 	    text-align: center;
-	    margin: auto;
-	    width: 65%; 
 	    font-size: small;
 	    font-style: italic;
-	    padding: 1em;
 	    border: 1px solid $color-accent;
 	    background-color: $color-divider;
 	}
