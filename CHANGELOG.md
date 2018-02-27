@@ -9,6 +9,11 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 - Placeholder
 
+## [0.2.4][] 2018-02-27
+
+### Added
+
+- *Actually* added the SEO information to the meta include.
 
 ## [0.2.3][] 2018-02-27
 
