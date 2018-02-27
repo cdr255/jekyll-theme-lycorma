@@ -9,7 +9,12 @@ adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Placeholder until something changes.
+- Placeholder
+
+## [0.2.1][] 2018-02-26
+
+### Fixed
+- Incremented Version to avoid repushing v0.2.0.
 
 ## [0.2.0][] 2018-02-26
 
